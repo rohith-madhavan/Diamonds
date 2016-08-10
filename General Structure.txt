@@ -1,0 +1,80 @@
+public class Diamonds {
+
+	final HashMap CardsToScores;
+
+	Player p1;
+	Computer c1;
+	
+	ArrayList<Card> pCards, cCards;
+	int pscore, cscore;
+	
+	Deck d;
+	ArrayList<Card> diamondsOnTable;
+	
+	Diamonds() {
+			deck = new deck
+			loop deck:
+				give 13 to player
+				give 13 to computer
+				take 13.			
+	}
+	
+	getBidOnCard() {
+		return bidOn;
+	}
+	
+	playGame() {
+		diamnondsOnTable.shuffle();
+		bidOn = diamondsOnTable.drawCard();
+		pb = p1.getBid(bidOn);
+		cb = c1.getBid(bidOn);
+		
+		compare(pb,cb)
+		
+		p1.result(pb, cb, bool isWin);
+		p1score
+		c1.result(cb, pb, bool isWin);
+		c1score
+		
+		UNTIL : diamondsOnTable is null
+		
+		declareWinner()
+		
+	}
+	
+	
+	
+	
+	
+	0) Shuffle 
+	REPEAT:
+	1) draw Card From diamondsOnTable
+	2) Make the players bet
+	3) Compare the bets
+	4) Add points to the winner's score
+	
+	END:
+	5) Declare winner
+}
+
+Card
+
+Pack
+
+Deck
+
+Hand
+
+Player {
+Hand h;
+int score;
+
+getBid(Card x)
+
+}
+
+Computer {
+Hand h;
+int score;
+}
+
